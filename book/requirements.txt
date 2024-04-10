@@ -3,6 +3,5 @@ matplotlib
 numpy
 scipy
 pandas
-cupy
 plotly
 colorsys
