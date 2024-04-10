@@ -1,0 +1,51 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Physics informed machine learning for fly swarms
+author: Lihao Guo
+copyright: Copyright 2024
+logo: logo.png
+# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+# Auto-exclude files not in the toc
+only_build_toc_files        : false
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: cache
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: stgbook.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+#######################################################################################
+# Launch button settings
+launch_buttons:
+  colab_url                 : "https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
+  binderhub_url             : "https://mybinder.org"
+  thebe                     : true
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/weirdoglh/SwarmFly  # Online location of your book
+  path_to_book: book  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+# Bib printing style
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    add_javascript: ["https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"]
+    add_css: ["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"]

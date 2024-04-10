@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Quest/index
+  sections:
+  # - file: Quest/overview
+- file: Data/index
+- file: Archi/index
+- file: Loss/index
+- file: Optim/index
+- file: material
