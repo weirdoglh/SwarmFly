@@ -52,13 +52,13 @@ jobs:
       with:
         path: "book/_build/html"
 
-    # Deploy the book's HTML to GitHub Pages
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+    # # Deploy the book's HTML to GitHub Pages
+    # - name: Deploy to GitHub Pages
+    #   id: deployment
+    #   uses: actions/deploy-pages@v4
 
     # Update gh-pages branch
-    - name: Deploy to GitHub Pages
+    - name: Push to gh-pages
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         branch: gh-pages
