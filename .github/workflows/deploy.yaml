@@ -52,11 +52,19 @@ jobs:
       with:
         path: "book/_build/html"
 
+    # # Deploy the book's HTML to GitHub Pages
+    # - name: Deploy to GitHub Pages
+    #   id: deployment
+    #   uses: actions/deploy-pages@v4
+    #   with:
+    #     branch: gh-pages
+    #     folder: book/_build/html
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        branch: gh-pages
-        folder: book/_build/html
+        branch: gh-pages  # replace with your branch
+        folder: book/_build/html  # replace with your folder
         token: ${{ secrets.GITHUB_TOKEN }}
