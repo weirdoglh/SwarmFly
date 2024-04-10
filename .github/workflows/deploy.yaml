@@ -68,4 +68,4 @@ jobs:
         branch: gh-pages  # replace with your branch
         folder: book/_build/html  # replace with your folder
         # token: ${{ secrets.GITHUB_TOKEN }}  # not enough permission to push branches
-        token: ${{ secrets.GIT_PAT }}  # self created PAT with repo scope
+        token: ${{ secrets.GH_PAT }}  # self created PAT with repo scope
