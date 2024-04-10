@@ -6,8 +6,11 @@ root: intro
 chapters:
 - file: Quest/index
   sections:
-  # - file: Quest/overview
+  - file: Quest/overview
 - file: Data/index
+  sections:
+  - file: Data/transform
+  - file: Data/visualize
 - file: Archi/index
 - file: Loss/index
 - file: Optim/index
